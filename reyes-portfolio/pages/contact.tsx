@@ -13,7 +13,7 @@ export default function Contact() {
       <div className="text-center p-4">
         <h1 className="text-4xl font-bold mb-4">Contact Me!</h1>
         <form
-          action="mailto:example@email.com"
+          action="mailto:rachelreyes2403@gmail.com"
           method="post"
           encType="text/plain"
           className="space-y-4 max-w-lg mx-auto"

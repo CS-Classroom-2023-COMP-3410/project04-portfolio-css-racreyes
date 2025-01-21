@@ -1,17 +1,17 @@
-import Image from "next/image";
+"use client";
+
 import Navbar from "@/Components/navbar";
-
-
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutMe() {
   return (
-    <div className=" min-h-screen p-6">
-
+    <div className="min-h-screen px-6 md:px-16 lg:px-24 py-6">
+      {/* Navbar */}
       <Navbar />
 
       {/* About Me Section */}
-      <div className="text-center">
+      <div className="text-center mb-16">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
         <p className="text-lg">
           Hello! My name is Rachel Reyes, and this is a little corner where I
@@ -20,96 +20,91 @@ export default function AboutMe() {
       </div>
 
       {/* Hobbies Section */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold mb-4">Hobbies</h2>
-        <ul className="space-y-8">
-          {/* Outdoors Hobby */}
-          <li>
-            <p>
-              <strong>Outdoors:</strong> I love exploring the beauties of nature
-              through camping, mountain walks, and road trips with friends and
-              family.
-            </p>
-            <div className="flex justify-center mt-4">
-              <img
-                src="/Photos/IMG_2043.JPG"
-                alt="Rachel and her boyfriend hugging dearly in front of their tent while camping"
-                className="w-40 h-52 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </li>
+      <div className=" bg-[url('/Photos/tncwashington.jpg')] bg-cover bg-center pb-20 gap-16"> {/* Increased spacing here */}
+      <div className="bg-transparent/60">
 
-          {/* Books Hobby */}
-          <li>
-            <p>
-              <strong>Books:</strong> I'm an avid reader who enjoys diving into
-              the world of literature and sharing book recommendations.
-            </p>
-            <div className="flex justify-center mt-4">
-              <img
-                src="/Photos/MemoirsOfAGeisha.jpg"
-                alt="Cover of Memoirs of a Geisha book"
-                className="w-40 h-52 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </li>
+        {/* Outdoors Hobby */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr]  items-center gap-8">
+          <Image
+            src="/Photos/IMG_2043.JPG"
+            width={400}
+            height={400}
+            className="rounded-lg shadow-lg justify-self-center"
+            alt="Rachel and her boyfriend hugging dearly in front of their tent while camping"
+          />
+          <p className="text-lg leading-relaxed max-w-lg">
+            <strong>Outdoors:</strong> I love exploring the beauties of nature
+            through camping, mountain walks, and road trips with friends and
+            family.
+          </p>
+        </div>
 
-          {/* Food Hobby */}
-          <li>
-            <p>
-              <strong>Food:</strong> Discovering new recipes, trying out new
-              restaurants, and sharing interesting food experiences is my
-              passion.
-            </p>
-            <div className="flex justify-center mt-4">
-              <img
-                src="/Photos/kennysbbfsdinner.JPG"
-                alt="Spread of food including a charcuterie board, steak, tomatoes, and salad"
-                className="w-40 h-52 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </li>
+        {/* Books Hobby */}
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center gap-8">
+          <p className="text-lg leading-relaxed max-w-lg lg:text-right">
+            <strong>Books:</strong> I'm an avid reader who enjoys diving into
+            the world of literature and sharing book recommendations.
+          </p>
+          <Image
+            src="/Photos/MemoirsOfAGeisha.jpg"
+            width={400}
+            height={400}
+            className="rounded-lg shadow-lg justify-self-center"
+            alt="Cover of Memoirs of a Geisha book"
+          />
+        </div>
 
-          {/* Health Hobby */}
-          <li>
-            <p>
-              <strong>
-                <Link href="/health" className=" hover:underline">
-                  Health and Fitness
-                </Link>
-              </strong>{" "}
-              Fitness is a big part of my life, and I enjoy creating workout
-              routines, staying active, and sharing motivation with others.
-            </p>
-          </li>
+        {/* Food Hobby */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] items-center gap-8">
+          <Image
+            src="/Photos/kennysbbfsdinner.JPG"
+            width={400}
+            height={400}
+            className="rounded-lg shadow-lg justify-self-center"
+            alt="Spread of food including a charcuterie board, steak, tomatoes, and salad"
+          />
+          <p className="text-lg leading-relaxed max-w-lg">
+            <strong>Food:</strong> Discovering new recipes, trying out new
+            restaurants, and sharing interesting food experiences is my passion.
+          </p>
+        </div>
 
-          {/* Coding Hobby */}
-          <li>
-            <p>
-              <strong>
-                <Link href="/project" className=" hover:underline">
+        {/* Health Hobby */}
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center gap-8">
+          <p className="text-lg leading-relaxed max-w-lg lg:text-right">
+            <strong>
+              <Link href="/health" className="hover:underline">
+                Health and Fitness
+              </Link>
+            </strong>{" "}
+            Fitness is a big part of my life, and I enjoy creating workout
+            routines, staying active, and sharing motivation with others.
+          </p>
+          <div></div> {/* Placeholder for spacing */}
+        </div>
+
+        {/* Coding Hobby */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] items-center gap-8">
+          <Image
+            src="/Photos/IMG_2043.JPG"
+            width={400}
+            height={400}
+            className="rounded-lg shadow-lg justify-self-center"
+            alt="Coding illustration"
+          />
+          <p className="text-lg leading-relaxed max-w-lg">
+            <strong>
+              <Link href="/project" className=" hover:underline">
                 Coding
-                </Link>
-              </strong>{" "}
-              As an aspiring software engineer, I love creating projects that
-              solve real-world problems and improve lives.
-            </p>
-          </li>
-        </ul>
+              </Link>
+            </strong>{" "}
+            As an aspiring software engineer, I love creating projects that
+            solve real-world problems and improve lives.
+          </p>
+        </div>
       </div>
 
-      {/* Background Section */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold mb-4">Background</h2>
-        <p>
-          I am a software engineering student with a love for combining
-          creativity and logic to build impactful solutions while learning as
-          much as I can personally and through my computer science career. My
-          journey so far has been enriched by a mix of personal projects,
-          internships, and continuous learning.
-        </p>
-      </div>
     </div>
+</div>
   );
 }
-
