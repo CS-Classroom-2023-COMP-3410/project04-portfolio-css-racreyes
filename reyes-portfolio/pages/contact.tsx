@@ -6,9 +6,6 @@ export default function Contact() {
   return (
     <div className="bg-papayawhip min-h-screen text-white-800 p-6">
 
-      <Navbar />
-      
-
       {/* Contact Form */}
       <div className="text-center p-4">
         <h1 className="text-4xl font-bold mb-4">Contact Me!</h1>

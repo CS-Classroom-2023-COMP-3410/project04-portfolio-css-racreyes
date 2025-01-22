@@ -6,9 +6,8 @@ import Link from "next/link";
 
 export default function HealthAndWellness() {
   return (
-    <div className=" p-6">
+    <div className="p-6 lg:px-16 lg:mx-32">
 
-      <Navbar />
 
       {/* Page Title */}
       <div className="text-center">
@@ -18,7 +17,8 @@ export default function HealthAndWellness() {
       </div>
 
       {/* Fitness Section */}
-      <div className="mb-12">
+      <div className="">
+      <div className="mb-12 p-6 lg:px-32 bg-[#899878]/75 rounded-lg shadow-lg">
         <h2 className="text-2xl font-semibold mb-4">Fitness</h2>
         <p>
           I love weightlifting and staying active. It’s a big part of my life,
@@ -26,7 +26,7 @@ export default function HealthAndWellness() {
           for fitness extends to enjoying outdoor activities like camping and
           hiking, which keep me grounded and connected to nature.
         </p>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 p-8">
           <Image
             src="/Photos/riverntrees.JPG"
             alt="A beautiful forest with a river in the middle"
@@ -35,17 +35,19 @@ export default function HealthAndWellness() {
             className="rounded-lg shadow-lg"
           />
         </div>
+
+      </div>
       </div>
 
       {/* Food Section */}
-      <div className="mb-12">
+      <div className="mb-12 p-6 lg:px-32 bg-mybrown rounded-lg shadow-lg">
         <h2 className="text-2xl font-semibold mb-4">Food</h2>
         <p>
           Trying new foods and experimenting with recipes is a joy for me. From
           discovering unique cuisines to indulging in comforting meals, food is
           a celebration of life’s flavors.
         </p>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 p-8">
           <Image
             src="/Photos/IMG_4385.jpg"
             alt="Delicious Japanese food"
@@ -57,7 +59,7 @@ export default function HealthAndWellness() {
       </div>
 
       {/* Mental Wellness Section */}
-      <div>
+      <div className="p-6 lg:py-16 lg:px-32 bg-[#899878]/75 rounded-lg shadow-lg">
         <h2 className="text-2xl font-semibold mb-4">Mental Wellness and Learning</h2>
         <p>
           Staying mentally balanced and continuously learning are core parts of
@@ -65,7 +67,7 @@ export default function HealthAndWellness() {
           and I believe that growth comes from challenging yourself with new
           knowledge and experiences.
         </p>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 p-8">
           <Image
             src="/Photos/redAndorangeflower.JPG"
             alt="A vibrant flower"

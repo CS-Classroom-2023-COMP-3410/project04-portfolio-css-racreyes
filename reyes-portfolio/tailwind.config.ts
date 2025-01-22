@@ -17,6 +17,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        mybrown: "#483C32",
+        navbar: "#121113",
       },
     },
   },

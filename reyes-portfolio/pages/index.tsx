@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className={`grid grid-rows-[20px_1fr_20px] items-center min-h-screen p-8 pb-20 gap-16 `}>
-      <Navbar/>
-      <main className=" bg-[url('/Photos/88C71B99-4026-4BD4-8BB5-2838D395D929.jpg')] bg-cover bg-center min-h-screen flex flex-col items-center justify-center">
+    //<div className={`grid grid-rows-[20px_1fr_20px] items-center min-h-screen p-8 pb-20 gap-16 `}>
+    <div className="pb-20 p-8">
+      <div className=" bg-[url('/Photos/88C71B99-4026-4BD4-8BB5-2838D395D929.jpg')] bg-fixed bg-cover bg-center min-h-screen flex flex-col items-center justify-center">
       <div className="bg-transparent/60">
         {/* Welcome Section */}
         <div className="text-center p-10">
@@ -72,8 +72,8 @@ export default function Home() {
         </div>
         </div>
       </div>
-      </main>
-      <footer>
+      </div>
+      <footer className="py-10 ">
       {/* Social Media Links */}
             <div className="text-center">
               <h2 className="text-2xl font-semibold">Follow Me on Social Media</h2>
