@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Navbar from "@/Components/navbar";
 import Link from "next/link";
 
 export default function Contact() {

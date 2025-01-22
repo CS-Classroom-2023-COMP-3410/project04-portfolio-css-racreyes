@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/Components/navbar";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -39,7 +38,7 @@ export default function AboutMe() {
         {/* Books Hobby */}
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center gap-8 px-16 py-4">
           <p className="text-lg leading-relaxed max-w-lg bg-mybrown/75 p-6 rounded-lg shadow-lg">
-            <strong>Books:</strong> I'm an avid reader who enjoys diving into
+            <strong>Books:</strong> I&apos;m an avid reader who enjoys diving into
             the world of literature and sharing book recommendations.
           </p>
           <Image

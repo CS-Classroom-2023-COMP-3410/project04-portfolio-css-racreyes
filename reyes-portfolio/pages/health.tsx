@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Navbar from "@/Components/navbar";
-import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
 
 
 export default function HealthAndWellness() {
